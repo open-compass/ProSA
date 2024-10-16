@@ -16,20 +16,12 @@ Previous work typically measures prompt sensitivity at the dataset level by calc
 
 For each set of all prompt variants under the same instance, we have:
 
-$$
-    % PromptScore(Inst, p_i, p_j) =
-    % \left\{
-    % \begin{array}{ll}
-    %   1 - Cons(R(p_i), R(p_j)) & p_i \neq p_j,\\ 
-    %   0 & otherwise
-    % \end{array} \right.
-    \mathcal{S} = \frac{\sum_{p_i, p_j \in P} (\left | Y(P_i) - Y(P_j) \right |)}{C(\left | P \right |, 2)}
-$$
+![equation_s](assets/equation_s.png)
+
 Here, $Y(p)$ represents the performance metric under this prompt $p$. For instances with the given ground truth, $Y(p)$ refers to the correctness of LLM' response. For tasks without explicit ground truth, where responses are often given a score representing the quality of the generation, $Y(p)$ refers to the given score within the interval [0, 1]. $\left | Y(P_i) - Y(P_j) \right |$ represents the absolute value difference in performance metrics between prompt $p_i$ and prompt $p_j$. $C(\left | P \right |, 2)$ represents the count of prompt pairs in the same instance. The calculation of PSS is as follows:
 
-$$
-    \text{PSS} = \frac{1}{N} \sum_{i=1}^{N} \mathcal{S}_i
-$$
+![equation_pss](assets/equation_pss.png)
+
 Here $N$ is the total number of instances in the dataset and $\mathcal{S}_i$ is the score for the $i$-th instance.
 
 ## 📒 Evaluation
