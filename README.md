@@ -1,6 +1,7 @@
 # ProSA: Assessing and Understanding the Prompt Sensitivity of LLMs
 
-<!-- [📄[Paper]()] -->
+[![arXiv](https://img.shields.io/badge/arXiv-2410.12405-b31b1b.svg)](https://arxiv.org/abs/2410.12405)
+[![license](https://img.shields.io/github/license/InternLM/opencompass.svg)](./LICENSE)
 
 ## ☀️Introduction
 
@@ -62,6 +63,12 @@ Besides, we also re-clustered the prompts in Arena Hard Auto into 20 categories 
 
 
 ## 🖊️ Citation
+If you find our work useful, please consider citing:
 ```
-TBA
+@article{zhuo2024prosa,
+  title={ProSA: Assessing and Understanding the Prompt Sensitivity of LLMs},
+  author={Zhuo, Jingming and Zhang, Songyang and Fang, Xinyu and Duan, Haodong and Lin, Dahua and Chen, Kai},
+  journal={arXiv preprint arXiv:2410.12405},
+  year={2024}
+}
 ```
