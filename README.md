@@ -31,17 +31,17 @@ Here $N$ is the total number of instances in the dataset and $\mathcal{S}_i$ is 
 
 Our experiments are based on [OpenCompass](https://github.com/open-compass/opencompass), a highly reproducible and versatile LLM evaluation platform. All prompts used are available in `prompts` 
 
-### Subjective Evaluation
+### Objective Evaluation
 
 We evaluate multiple LLMs on four benchmarks include [CommonsenseQA](https://arxiv.org/abs/1811.00937), [ARC-Challenge](https://arxiv.org/abs/1803.05457), [MATH](https://arxiv.org/abs/2103.03874), and [HumanEval](https://arxiv.org/abs/2107.03374), with 12 prompt templates respectively.
 
-![Subjective](./assets/main.png)
+![Objective](./assets/main.png)
 
 We then explored the influence of few-shot examples on prompt sensitivity by evaluating Qwen1.5 series on ARC-Challenge and CommonsenseQA. We found larger models can exhibit better prompt robustness as the number of few-shot examples increases.
 
 ![few_shot](./assets/few_shot.png)
 
-### Objective Evaluation
+### Subjective Evaluation
 
 We evaluate five advanced LLMs on [LC AlpacaEval 2.0](https://github.com/tatsu-lab/alpaca_eval) and [Arena Hard Auto](https://github.com/lmarena/arena-hard-auto) with three prompts respectively.
 
