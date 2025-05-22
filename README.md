@@ -65,10 +65,11 @@ Besides, we also re-clustered the prompts in Arena Hard Auto into 20 categories 
 ## 🖊️ Citation
 If you find our work useful, please consider citing:
 ```
-@article{zhuo2024prosa,
+@inproceedings{zhuo2024prosa,
   title={ProSA: Assessing and Understanding the Prompt Sensitivity of LLMs},
   author={Zhuo, Jingming and Zhang, Songyang and Fang, Xinyu and Duan, Haodong and Lin, Dahua and Chen, Kai},
-  journal={arXiv preprint arXiv:2410.12405},
+  booktitle={Findings of the Association for Computational Linguistics: EMNLP 2024},
+  pages={1950--1976},
   year={2024}
 }
 ```
